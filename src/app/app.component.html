@@ -1,0 +1,45 @@
+<div class="container">
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">WebSiteName</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="" >Home</a>
+	      </li>
+	      <li routerLinkActive="active"><a [routerLink]="['contacts']">Contacts</a>
+	      </li>
+	      <li routerLinkActive="active"><a [routerLink]="['servers']">Servers</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="row">
+
+		<router-outlet></router-outlet>
+
+	</div>
+
+</div>
+
+
+
+
+
+<!--
+      <b>Angular Component Using Observables!</b>
+
+      <h6 style="margin-bottom: 0">VALUES:</h6>
+      <div *ngFor="let value of values">- {{ value }}</div>
+
+      <h6 style="margin-bottom: 0">ERRORs:</h6>
+      <div>Errors: {{anyErrors}}</div>
+
+      <h6 style="margin-bottom: 0">FINISHED:</h6>
+      <div>Finished: {{ finished }}</div>
+
+      <button style="margin-top: 2rem;" (click)="init()">Init</button>
+
+  -->

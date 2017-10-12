@@ -1,0 +1,19 @@
+<div>
+  contact works!
+
+  <p> Contact: {{contact.id}} </p>
+  
+  <p> Name: {{contact.name}} </p>
+  <p> Email: {{contact.email}} </p>
+
+</div>
+
+
+<a [routerLink]="['/contact', 1, 'Marco']">Load Marco </a>
+
+<hr>
+
+<button class="btn btn-primary" (click)="goToContacts()">
+    Go back to Contacts...
+  </button>
+  

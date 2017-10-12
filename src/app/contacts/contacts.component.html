@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="list-group">
+        <a 
+          href="#" class="list-group-item"
+          [routerLink]="['/contact', c.id, 'edit']"
+          [queryParams]="{'allowEdit': 1}" 
+          [fragment]="'loading'"
+          *ngFor="let c of contacts" 
+        >
+          {{c.id}}
+          {{c.name}}
+          {{c.email}}
+        </a>
+    </div>
+  </div>
+</div>
+
